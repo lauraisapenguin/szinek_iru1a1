@@ -27,3 +27,52 @@ body{
         background-color: rgb(11, 43, 43);
     }
 }
+
+
+#header{
+    grid-area: h;
+}
+
+#header{
+    grid-area: h;
+}
+
+#header{
+    grid-area: h;
+}
+
+#nav{
+    grid-area: n;
+}
+
+#content{
+    grid-area: c;
+}
+
+#aside{
+    grid-area: a;
+}
+
+#side{
+    grid-area: s;
+}
+
+#footer{
+    grid-area: f;
+}
+#wrapper{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-areas: 
+        "h h h h"
+        "n c a s"
+        "f f f f";
+}
+
+#wrapper > div{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
